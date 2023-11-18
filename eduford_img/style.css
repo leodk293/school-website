@@ -1,0 +1,608 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url('images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    padding: 20px;
+    height: 800px;
+}
+.logo-and-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px;
+}
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+li{
+    list-style: none;
+}
+header a,.about-header a,.blog-header a,.header-contact a,.header-courses a{
+    color: #fff;
+    font-family: sans-serif;
+    text-decoration: none;
+    transition: color 250ms ease-in;
+}
+a:hover{
+    color: crimson;
+    text-decoration: underline;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    align-self: center;
+}
+.text h1{
+    font-size: 50px;
+    transition: transform 250ms ease-in-out, color 300ms ease-in-out;
+}
+.text p{
+    font-size: 30px;
+}
+.text h1, .text p{
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+}
+header button{
+    background: transparent;
+    color: #f1f1f1;
+    width: 200px;
+    font-size: 17px;
+    border: 1px solid #fff;
+    font-family: sans-serif;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 250ms ease-in-out, color 300ms;
+}
+header button:hover{
+    background-color: #fff;
+    color: #000;
+}
+.courses{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.courses h1, .courses p{
+    text-align: center;
+    font-family: sans-serif;
+}
+.courses-level{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.level{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    border: 1px solid rgba(250, 128, 114, 0.303);
+    background-color: rgba(250, 128, 114, 0.303);
+    border-radius: 10px;
+    padding: 25px;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(128, 128, 128, 0.478);
+    font-family: sans-serif;
+    cursor: pointer; 
+    transition: box-shadow 300ms ease-in-out;
+}
+.level:hover{
+    box-shadow: 0 10px 20px rgba(128, 128, 128, 0.836);
+}
+.level h2,.level p{
+    text-align: center;
+}
+.level p{
+    color: gray;
+}
+.campus{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 200px;
+    
+}
+.campus h1, .campus p{
+    font-family: sans-serif;
+    text-align: center;
+}
+.school-campus{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.london{
+    background-image: url("images/london.png");
+    height: 700px;
+    width: 400px;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: opacity 250ms ease-in-out, transform 300ms 100ms ease-in-out;
+    border-radius: 10px;
+}
+.Newyork{
+    background-image: url("images/newyork.png");
+    height: 700px;
+    width: 400px;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: opacity 250ms ease-in-out, transform 300ms 100ms ease-in-out;
+    border-radius: 10px;
+}
+.Washington{
+    background-image: url("images/washington.png");
+    height: 700px;
+    width: 400px;
+    background-size: cover;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: opacity 250ms ease-in-out, transform 300ms 100ms ease-in-out;
+    border-radius: 10px;
+}
+.london h1,.Newyork h1,.Washington h1{
+    transform: translateY(400px);
+    font-family: sans-serif;
+}
+.london:hover{
+    transform: scale(1.03);
+    opacity: 0.7;
+}
+
+.Newyork:hover{
+    transform: scale(1.03);
+    opacity: 0.7;
+}
+
+.Washington:hover{
+    transform: scale(1.03);
+    opacity: 0.7;
+}
+.facilities{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    gap: 25px;
+}
+.facilities >h1, .facilities>p{
+    text-align: center;
+    font-family: sans-serif;
+}
+.facilities-img{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.facilities img{
+    width: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.img{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+.facilty-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: sans-serif;
+    align-self: center;
+}
+.facilty-text p{
+    width: 400px;
+    color: gray;
+}
+.testiomials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 130px;
+}
+.testiomials>h1,.testiomials>p{
+    text-align: center;
+    font-family: sans-serif;
+}
+.testiomials>p{
+    color: gray;
+}
+.students-testimonials{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+.students img{
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.students{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgba(250, 128, 114, 0.122);
+    background-color: rgba(250, 128, 114, 0.122);
+    padding: 15px;
+    border-radius: 5px;
+    gap: 30px;
+    box-shadow: 0 4px 10px rgba(220, 20, 60, 0.344);
+}
+.stu-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.stu-text p{
+    width: 400px;
+    color: gray;
+    font-family: sans-serif;
+}
+.stu-text h2{
+    font-family: sans-serif;
+}
+.stars-2,.stars-1{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.stars-2 div{
+    border: 1px solid crimson;
+    background-color: crimson;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+.stars-1>:nth-child(1),.stars-1>:nth-child(2),.stars-1>:nth-child(3),.stars-1>:nth-child(4){
+    border: 1px solid crimson;
+    background-color: crimson;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+.void{
+    background-color: transparent;
+    border: 1px solid crimson;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+.contact h2{
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 35px;
+}
+
+.contact{
+    background-image: url('images/banner2.jpg');
+    background-size: cover;
+    width: 70%;
+    border-radius: 10px;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 150px;
+}
+.contact-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+.contact button{
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 10px;
+    width: 200px;
+    color: #fff;cursor: pointer;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in;
+}
+.contact button:hover{
+    background-color: #fff;
+    color: #000;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 120px;
+    border-top: 1px solid gray;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    background-color: rgba(128, 128, 128, 0.042);
+}
+footer p{
+    text-align: center;
+    font-family: sans-serif;
+    color: gray;
+    width: 700px;
+}
+footer h2{
+    text-align: center;
+    font-family: sans-serif;
+}
+.social-medias{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+.social-medias img{
+    height: 25px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 200ms ease-in-out;
+}
+.social-medias img:hover{
+    transform: translateY(-10px);
+}
+.reputaion{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-top: 150px;
+    justify-content: center;
+}
+.reputaion img{
+    width: 500px;
+    object-fit: cover;
+}
+.reput-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.reput-text h1{
+    font-family: sans-serif;
+    font-size: 40px;
+}
+.reput-text p{
+    width: 550px;
+    font-family: sans-serif;
+    color: gray;
+}
+.reput-text button{
+    padding: 10px;
+    width: 130px;
+    border: 1px solid crimson;
+    color: crimson;
+    background-color: transparent;
+    transition: background-color 250ms ease-in, color 250ms;
+    cursor: pointer;
+}
+.reput-text button:hover{
+    background-color: crimson;
+    color: #fff;
+}
+.header-courses h1{
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 40px;
+}
+
+.blog-header,.header-contact,.header-courses,.about-header{
+    background-image: url('images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    padding: 20px;
+    height: 700px;
+}
+.blog-header nav ul,.header-contact nav ul,.header-courses nav ul,.about-header nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.blog-header h1,.header-contact h1,.header-courses h1,.about-header h1{
+    text-align: center;
+    font-family: sans-serif;
+    color: #fff;
+    font-size: 40px;
+}
+.main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 130px;
+}
+.certificate{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.certificate >img{
+    width: 680px;
+    object-fit: cover;
+}
+.post-categories{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+.title{
+    border: 1px solid crimson;
+    background-color: crimson;
+    font-family: sans-serif;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.choice{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+.choice div{
+    font-family: sans-serif;
+    color: gray;
+    border: 1px solid #fff;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.choice div:hover{
+    background-color: #f1f1f1;
+}
+.blog-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.blog-text h1{
+    font-family: sans-serif;
+}
+.blog-text p{
+    font-family: sans-serif;
+    color: gray;
+    width: 680px;
+}
+.form{
+    width: 680px;
+    border: 2px solid rgba(128, 128, 128, 0.438);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 30px;
+}
+.form h2{
+    font-family: sans-serif;
+
+}
+.form button{
+    border: 1px solid crimson;
+    background-color: transparent;
+    padding: 10px;
+    width: 160px;
+    margin-left: 30px;
+    font-family: sans-serif;
+    color: crimson;
+    transition: background-color 250ms ease-in, color 250ms;
+    cursor: pointer;
+}
+.form button:hover{
+    background-color: crimson;
+    color: #fff;
+}
+.form input,.form textarea{
+    background-color: rgba(128, 128, 128, 0.077);
+    padding: 10px;
+}
+.informations{
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 100px;
+}
+.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    font-family: sans-serif;
+}
+.row img{
+    height: 25px;
+    object-fit: cover;
+    align-self: center;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+form input{
+    width: 500px;
+    padding: 15px;
+}
+form button{
+    border: 1px solid crimson;
+    background-color: transparent;
+    padding: 10px;
+    width: 180px;
+    color: crimson;margin-left: 30px;
+    cursor: pointer;
+    transition: background-color 250ms ease-in, color 250ms;
+}
+form button:hover{
+    background-color: crimson;
+    color: #fff;
+}
+form textarea{
+    padding: 10px;
+}
+
+
+@keyframes transition{
+    from{
+        opacity: 0.5;
+        transform: translateY(-5px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animePage{
+    animation: transition 500ms ease-in-out both;
+}
+
+.contact a{
+    color: #fff;
+    text-decoration: none;
+}
+.contact a:hover{
+    text-decoration: none;
+    color: #000;
+    
+}
